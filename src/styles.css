@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+html, body {
+    height: 100%;
+    background: #DBE6F6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(226, 241, 5), #DBE6F6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(151, 236, 95), #DBE6F6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

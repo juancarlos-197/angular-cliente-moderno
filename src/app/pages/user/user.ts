@@ -1,8 +1,8 @@
 import { UserService } from './../../services/user/user.services';
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Users } from '../../interfaces/users';
 import {MatTableModule} from '@angular/material/table';
-
+import { JsonPipe } from '@angular/common';
 @Component({
   selector: 'app-user',
   imports: [MatTableModule],

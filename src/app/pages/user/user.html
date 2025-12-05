@@ -1,14 +1,14 @@
 <p>user works!</p>
 <!--  USUARIOS -->
 <div class=" mx-auto border border-white
-min-h-96 max-w-screen-2xl bg-gradient-to-br from-black via-sky-950 to-gray-800 ">
+min-h-96 max-w-screen-2xl bg-linear-to-br from-black via-sky-950 to-gray-800 ">
 
     <div class=" text-white ">
         <h4 class="text-center">4 Data API Demo - Usuarios</h4>
         <img src="" alt="">
         <section class="flex gap-2 justify-center ">
 
-            <a class="bg-gradient-to-br from-white p-2 h-15 w-15 flex rounded-full hover:scale-150 
+            <a class=" from-white p-2 h-15 w-15 flex rounded-full hover:scale-150 
               transition-transform" href="https://wordpress.com/es/" target="_blank">
                 <svg viewBox="0 0 122.52 122.523">
                     <g fill="#21759b">
@@ -87,7 +87,7 @@ min-h-96 max-w-screen-2xl bg-gradient-to-br from-black via-sky-950 to-gray-800 "
             <!-- Youtube -->
 
 
-            <a class="bg-gradient-to-tr from-white p-2 h-15 w-15 flex rounded-full hover:scale-150 
+            <a class=" from-white p-2 h-15 w-15 flex rounded-full hover:scale-150 
               transition-transform" href="https://www.youtube.com/watch?v=fKp4VUKDyA4" target="_blank">
                 <svg preserveAspectRatio="xMidYMid" viewBox="0 0 256 180">
                     <path fill="red"
@@ -97,7 +97,7 @@ min-h-96 max-w-screen-2xl bg-gradient-to-br from-black via-sky-950 to-gray-800 "
             </a>
             <!-- Instagram-->
 
-            <a class="bg-gradient-to-br p-2 h-15 w-15 flex rounded-full hover:scale-150 
+            <a class=" p-2 h-15 w-15 flex rounded-full hover:scale-150 
               transition-transform         " href="https://www.instagram.com/" style="background: linear-gradient(45deg, #f9ce34 0%,
               #ee2a7b 40%, #6228d7 100%);" target="_blank">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 264.583 264.583">
@@ -132,7 +132,7 @@ min-h-96 max-w-screen-2xl bg-gradient-to-br from-black via-sky-950 to-gray-800 "
                 <!--Columna de id-->
                 <ng-container matColumnDef="id">
                     <th mat-header-cell *matHeaderCellDef> No. </th>
-                    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                    <td mat-cell *matCellDef="let element"> {{element.id}}| json </td>
                 </ng-container>
                 <!--Columna de primer nombre-->
                 <ng-container matColumnDef="first_name">

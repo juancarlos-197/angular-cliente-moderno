@@ -1,0 +1,13 @@
+<p>list works!</p>
+<div>
+    @if (pokeListResource.isLoading()) {
+    <p>Loading...</p>
+    }@else if(pokeListResource.error()){
+    <p>Error Loading Pokémon</p>
+    }@else {
+    @let pokemonList = pokeListResource.value();
+    @for (item of pokemonList?.results; track item) {
+    <p>{{ item.name }}</p>
+    }
+    }
+</div>

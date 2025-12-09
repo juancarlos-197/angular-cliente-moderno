@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { List } from './pages/list/list';
 
 export const routes: Routes = [
      {
@@ -10,6 +11,10 @@ export const routes: Routes = [
         path: 'user',
         loadComponent: () =>
             import('./pages/user/user').then(u => u.User)
+    },
+    {
+        path: 'list',
+        component: List
     },
     {
         path: '**',

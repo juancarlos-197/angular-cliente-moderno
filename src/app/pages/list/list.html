@@ -1,13 +1,18 @@
-<p>list works!</p>
-<div>
+<h1>list works!</h1>
+<div class="poke-container">
+    <!-- Si esto esta cargando? por un bloque de carga-->
     @if (pokeListResource.isLoading()) {
     <p>Loading...</p>
-    }@else if(pokeListResource.error()){
+    } <!--Si es que hay algún error, porque que hubo un error al 
+    momento de que se cargaran los poquekon  -->
+      @else if(pokeListResource.error()){
     <p>Error Loading Pokémon</p>
-    }@else {
+    }<!--Y si no paso ni  uno ni lo otro, podemos saber de que el request
+    se hizo de forma exitosa  --> 
+     @else {
     @let pokemonList = pokeListResource.value();
     @for (item of pokemonList?.results; track item) {
-    <p>{{ item.name }}</p>
+    <app-card [pokeResultI]="item"/>
     }
     }
 </div>

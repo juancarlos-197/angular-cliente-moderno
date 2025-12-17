@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { ListServices } from '../../services/list/list.services';
+import { Card } from '../../components/card/card';
 
 @Component({
   selector: 'app-list',
-  imports: [],
+  imports: [Card],
   templateUrl: './list.html',
   styleUrl: './list.css',
 })

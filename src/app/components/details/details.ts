@@ -1,0 +1,11 @@
+import { Component, input } from '@angular/core';
+
+@Component({
+  selector: 'app-details',
+  imports: [],
+  templateUrl: './details.html',
+  styleUrl: './details.css',
+})
+export default class Details {
+readonly name= input<string>()
+}

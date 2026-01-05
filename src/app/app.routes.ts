@@ -12,9 +12,15 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./pages/user/user').then(u => u.User)
     },
+ 
     {
         path: 'list',
         component: List
+    },   
+    {
+        path: 'list/:name',
+        loadComponent: () =>
+            import('./components/details/details')
     },
     {
         path: '**',
